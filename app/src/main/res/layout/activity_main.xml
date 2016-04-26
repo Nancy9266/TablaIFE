@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.joseandres.tablaife.MainActivity"
+    android:background="#d2d0d0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IFE del votante:"
+        android:id="@+id/txv1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0b0000"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edt1"
+        android:layout_below="@+id/txv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Direccion donde vota:"
+        android:id="@+id/txv2"
+        android:layout_below="@+id/edt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0b0000"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt2"
+        android:layout_below="@+id/txv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Numero de Casilla:"
+        android:id="@+id/txv3"
+        android:layout_below="@+id/edt2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0b0000"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edt3"
+        android:layout_below="@+id/edt2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alta de Usuario"
+        android:id="@+id/btn1"
+        android:onClick="alta"
+        android:background="#81a58f"
+        android:textColor="#0b0000"
+        android:layout_above="@+id/btn2"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta por IFE"
+        android:id="@+id/btn2"
+        android:onClick="consultaporcodigo"
+        android:background="#80aec2"
+        android:textColor="#0b0000"
+        android:textSize="15dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/btn1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="consulta por descripcion"
+        android:id="@+id/button3"
+        android:onClick="consultapordescripcion"
+        android:textColor="#0b0000"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baja de Usuario"
+        android:id="@+id/btn4"
+        android:onClick="bajaporcodigo"
+        android:background="#c7a074"
+        android:textColor="#0b0000"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn5"
+        android:layout_alignStart="@+id/btn1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificacion"
+        android:id="@+id/btn5"
+        android:onClick="modificacion"
+        android:background="#af4141"
+        android:textColor="#0b0000"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btn2" />
+</RelativeLayout>
